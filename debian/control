@@ -1,0 +1,26 @@
+Source: network-manager-fortisslvpn
+Section: net
+Priority: optional
+Maintainer: Mario Izquierdo (mariodebian) <mariodebian@gmail.com>
+Build-Depends: debhelper (>= 9), libssl-dev,
+               dh-autoreconf,
+               network-manager-dev,
+               libglib2.0-dev,
+               intltool,
+               ppp-dev,
+               libgtk-3-dev,
+               libnma-dev,
+               libsecret-1-dev,
+               libglib2.0-dev,
+               libnm-gtk-dev,
+               libnm-glib-dev,
+               libnm-util-dev,
+               libnm-glib-vpn-dev
+Standards-Version: 3.9.8
+Homepage: https://git.gnome.org/browse/network-manager-fortisslvpn
+
+Package: network-manager-fortisslvpn
+Architecture: any
+Depends: openfortivpn, ${shlibs:Depends}, ${misc:Depends}
+Description: Fortinet SSLVPN support for NetworkManager
+ Network Manager plugin to support Fortinet SSLVPN
